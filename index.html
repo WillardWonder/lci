@@ -1,317 +1,356 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lakeshore Custom Interiors – Durasein® Countertops & Acrylic Sinks | Door County, WI</title>
-  <meta name="description" content="Lakeshore Custom Interiors fabricates premium Durasein® solid surface countertops and 100% acrylic sinks for Door County & Northeast Wisconsin. White‑glove design, fabrication, installation, and lifetime refinishing."/>
-  <meta property="og:title" content="Lakeshore Custom Interiors – Premium Durasein® Countertops"/>
-  <meta property="og:description" content="Door County craftsmanship. Seamless solid surface countertops, integrated acrylic sinks, specialty surfaces, and refinishing."/>
-  <meta property="og:type" content="website"/>
-  <meta name="theme-color" content="#0d4d4d"/>
+  <title>Lakeshore Custom Interiors — Durasein® Countertops & Acrylic Sinks | Door County, WI</title>
+  <meta name="description" content="Door County’s white‑glove fabricator for Durasein® solid surface countertops and integrated acrylic sinks. Concierge service for second‑home owners."/>
+  <meta name="theme-color" content="#0c3c3b"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
   <style>
-    /* ====== Base / Theme ====== */
-    *,*::before,*::after{box-sizing:border-box}
-    :root{--teal:#1a7f7f;--deep-teal:#0d4d4d;--sage:#8b9e7d;--cream:#f8f6f0;--charcoal:#2d3436;--gold:#c9a961;--white:#fff}
-    html,body{height:100%}
-    body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--charcoal);line-height:1.7;background:var(--cream)}
-    h1,h2,h3,h4{font-family:"Helvetica Neue",Arial,sans-serif;font-weight:300;letter-spacing:2px;margin:0 0 .25em}
-    p{margin:0 0 1em}
-    a{color:inherit}
-    .container{max-width:1400px;margin:0 auto;padding:0 3rem}
-    .section{padding:6rem 0}
-    .section-title{text-align:center;font-size:2.6rem;margin-bottom:2.6rem;color:var(--deep-teal);letter-spacing:3px}
-
-    /* ====== Header ====== */
-    .header{position:sticky;top:0;z-index:999;background:linear-gradient(135deg,var(--deep-teal),var(--teal));color:var(--white);box-shadow:0 4px 20px rgba(0,0,0,.15)}
-    .header-content{display:flex;justify-content:space-between;align-items:center;gap:2rem;padding:1.5rem 3rem}
-    .logo-section{display:flex;align-items:center;gap:1rem}
-    .logo{width:82px;height:82px;opacity:.95;filter:brightness(1.05)}
-    .company-info h1{font-size:1.6rem;letter-spacing:3px;margin:0 0 .15rem}
-    .company-info p{font-size:.92rem;opacity:.9;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:1px}
-    .contact-info{text-align:right}
-    .phone{font-size:1.45rem;font-weight:300;margin-bottom:.25rem;letter-spacing:2px}
-    .address{font-size:.9rem;opacity:.95;letter-spacing:1px}
-
-    /* ====== Hero ====== */
-    .hero{background:linear-gradient(to bottom,rgba(26,127,127,.86),rgba(13,77,77,.92)),url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 800"><rect fill="%231a7f7f" width="1920" height="800"/><path fill="%230d4d4d" opacity=".3" d="M0 400 Q480 300 960 400 T1920 400 L1920 800 L0 800 Z"/></svg>');background-size:cover;background-position:center;color:var(--white);text-align:center;padding:8rem 3rem}
-    .hero h2{font-size:3.2rem;letter-spacing:4px;line-height:1.2;margin-bottom:1rem}
-    .hero p{font-size:1.22rem;max-width:820px;margin:0 auto 2.1rem;opacity:.96;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:1px}
-    .cta-button{display:inline-block;background:var(--gold);color:var(--charcoal);padding:1.05rem 2.6rem;border-radius:3px;text-decoration:none;font-size:1.05rem;letter-spacing:2px;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:600;box-shadow:0 4px 15px rgba(0,0,0,.2);transition:.25s}
-    .cta-button:hover{background:var(--white);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.28)}
-
-    /* ====== Cards / Grids ====== */
-    .products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:2.6rem;margin-top:2.2rem}
-    .product-card{background:var(--white);padding:2.4rem;border-radius:2px;border-top:4px solid var(--teal);box-shadow:0 8px 30px rgba(0,0,0,.08);transition:.3s}
-    .product-card:hover{transform:translateY(-6px);box-shadow:0 12px 40px rgba(0,0,0,.14)}
-    .product-card h3{font-size:1.7rem;color:var(--deep-teal);letter-spacing:2px;margin-bottom:1rem}
-    .product-card ul{list-style:none;padding:0;margin:0}
-    .product-card li{padding:.65rem 0;border-bottom:1px solid rgba(0,0,0,.06);font-size:1.05rem}
-    .product-card li::before{content:"✦ ";color:var(--gold);font-weight:700;margin-right:.6rem}
-
-    .why-choose{background:linear-gradient(135deg,var(--sage) 0%,#a0b592 100%);color:var(--white)}
-    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:2rem}
-    .feature{text-align:center;padding:2rem;background:rgba(255,255,255,.12);border-radius:2px;backdrop-filter:blur(10px);transition:.3s}
-    .feature:hover{background:rgba(255,255,255,.22);transform:scale(1.04)}
-    .feature-icon{font-size:2.6rem;margin-bottom:.6rem}
-    .feature h3{font-size:1.35rem;margin:.4rem 0 1rem;letter-spacing:2px}
-
-    .care-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:2rem;margin-top:2rem}
-    .care-card{background:var(--cream);padding:2rem;border-radius:2px;border-left:4px solid var(--teal);transition:.3s}
-    .care-card:hover{border-left-color:var(--gold);box-shadow:0 8px 25px rgba(0,0,0,.1)}
-    .care-card h3{color:var(--deep-teal);margin-bottom:1rem;font-size:1.35rem}
-
-    .download-section{text-align:center;margin-top:3rem;padding:2.4rem;background:linear-gradient(135deg,var(--deep-teal),var(--teal));border-radius:2px;color:var(--white)}
-    .download-buttons{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap}
-    .download-btn{display:inline-block;background:var(--white);color:var(--deep-teal);padding:1rem 2.1rem;border-radius:3px;text-decoration:none;font-family:"Helvetica Neue",Arial,sans-serif;letter-spacing:1px;font-weight:600;box-shadow:0 4px 15px rgba(0,0,0,.2);transition:.25s}
-    .download-btn:hover{background:var(--gold);color:var(--charcoal);transform:translateY(-2px)}
-
-    .testimonial-section{background:var(--cream)}
-    .testimonial{max-width:900px;margin:0 auto;text-align:center;font-size:1.2rem;font-style:italic;color:var(--charcoal);line-height:1.9;padding:2.2rem;background:var(--white);border-radius:2px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
-
-    .warranty-badge{text-align:center;padding:1.4rem;background:linear-gradient(135deg,var(--gold) 0%,#d4b876 100%);color:var(--charcoal);font-size:1.15rem;font-weight:600;letter-spacing:2px;margin:2rem 0;border-radius:2px;box-shadow:0 4px 20px rgba(201,169,97,.3)}
-
-    /* ====== Footer ====== */
-    .footer{background:var(--charcoal);color:var(--white);padding:4rem 0 2rem}
-    .footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem;margin-bottom:2rem}
-    .footer h4{font-size:1.2rem;margin-bottom:1rem;letter-spacing:2px;color:var(--gold)}
-    .footer p,.footer a{color:rgba(255,255,255,.84);text-decoration:none;display:block;margin-bottom:.5rem;transition:color .2s}
-    .footer a:hover{color:var(--gold)}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.2rem;text-align:center;color:rgba(255,255,255,.64);font-size:.92rem}
-
-    /* ====== Reveal on scroll ====== */
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
-    .reveal.revealed{opacity:1;transform:none}
-
-    /* ====== Forms ====== */
-    .form{max-width:720px;margin:0 auto;background:var(--white);padding:2rem;border-radius:4px;box-shadow:0 6px 30px rgba(0,0,0,.08)}
-    .form .row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-    .form label{display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-size:.95rem;margin:.25rem 0;color:var(--deep-teal);letter-spacing:1px}
-    .form input,.form textarea{width:100%;padding:.85rem;border:1px solid #dcdcdc;border-radius:3px;font-size:1rem}
-    .form textarea{min-height:140px;resize:vertical}
-    .form small{display:block;color:#666;margin-top:.25rem}
-    .form .actions{display:flex;align-items:center;gap:1rem;margin-top:1rem}
-    .status{margin-top:1rem;font-family:"Helvetica Neue",Arial,sans-serif}
-    .status[aria-live]{min-height:1.4em}
-    .status.success{color:#185c3b}
-    .status.error{color:#7a1c1c}
-    .visually-hidden{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
-
-    /* ====== Responsive ====== */
-    @media (max-width:768px){
-      .header-content{flex-direction:column;text-align:center;gap:1rem}
-      .contact-info{text-align:center}
-      .hero{padding:5.5rem 1.5rem}
-      .hero h2{font-size:2.3rem}
-      .hero p{font-size:1.05rem}
-      .section{padding:4rem 0}
-      .section-title{font-size:2rem}
-      .products-grid,.features-grid,.care-cards{grid-template-columns:1fr}
-      .form .row{grid-template-columns:1fr}
+    /* ===== Aesthetic System ===== */
+    :root{
+      --ink:#172022;            /* body text */
+      --muted:#5a6a6a;          /* secondary text */
+      --bg:#faf9f6;             /* page background */
+      --panel:#ffffff;          /* surfaces */
+      --line:#e8e5df;           /* hairline */
+      --teal:#0f5a5a;           /* brand */
+      --teal-2:#0c3c3b;         /* deep brand */
+      --gold:#c9a961;           /* accent */
+      --shadow:0 8px 28px rgba(12,60,59,.10);
+      --radius:18px;
+      --container:1180px;
     }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.75 Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;}
+    h1,h2,h3{font-family:"Playfair Display",serif;letter-spacing:.2px;color:var(--teal-2);margin:0 0 .5rem}
+    h1{font-size: clamp(34px,4.2vw,56px);line-height:1.12}
+    h2{font-size: clamp(26px,3vw,40px)}
+    h3{font-size: clamp(20px,2.2vw,26px)}
+    p{margin:0 0 1rem;color:var(--ink)}
+    .container{max-width:var(--container);margin:0 auto;padding:0 28px}
+    .btn{display:inline-flex;gap:.6rem;align-items:center;border-radius:999px;padding:.9rem 1.4rem;border:1px solid transparent;background:var(--gold);color:#2b2b2b;font-weight:600;text-decoration:none;box-shadow:var(--shadow);transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:saturate(1.05)}
+    .btn.outline{background:transparent;border-color:var(--line);color:var(--teal-2)}
+
+    /* ===== Top Bar / Nav ===== */
+    .top{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.75);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;min-height:74px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img{width:52px;height:52px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+    .brand .name{font:600 15px Inter,system-ui;letter-spacing:2px;color:var(--teal-2)}
+    .nav a.link{font-weight:500;color:var(--teal-2);text-decoration:none;margin-left:24px;opacity:.9}
+    .nav a.link:hover{opacity:1}
+
+    /* ===== Hero ===== */
+    .hero{position:relative;padding:80px 0 56px}
+    .hero .wrap{display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:center}
+    .hero .eyebrow{display:inline-flex;align-items:center;gap:.6rem;color:var(--muted);font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:12px}
+    .hero .card{background:linear-gradient(180deg,#ffffff, #f7f5ef);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:var(--radius);padding:28px}
+    .hero .list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+    .tag{display:flex;align-items:center;gap:.6rem;padding:.6rem .8rem;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:600;color:#2c3e3e}
+    .tag i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+    .call{display:flex;gap:12px;align-items:center;margin-top:18px}
+
+    /* ===== Feature Cards ===== */
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);transition:.25s}
+    .card:hover{transform:translateY(-4px)}
+    .card ul{margin-top:12px;padding-left:18px}
+    .card li{margin:.5rem 0;color:#334}
+
+    /* ===== Trust / Band ===== */
+    .band{margin:64px 0 0;background:linear-gradient(180deg,#0f5a5a,#0c3c3b);color:#fff}
+    .band .inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding:26px 0}
+    .metric{display:flex;flex-direction:column;align-items:center;gap:6px}
+    .metric b{font-size:22px}
+    .metric span{opacity:.9}
+
+    /* ===== Resources ===== */
+    .resources{padding:64px 0}
+    .resource-grid{display:grid;grid-template-columns:2fr 1fr;gap:26px}
+    .res-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow);padding:24px}
+    .res-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px}
+
+    /* ===== Gallery ===== */
+    .gallery{padding:64px 0;background:linear-gradient(180deg,#fbfaf7,#f5f2eb)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
+    .g{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#e8e5df}
+    .g:nth-child(1){grid-column:span 7}
+    .g:nth-child(2){grid-column:span 5}
+    .g:nth-child(3){grid-column:span 5}
+    .g:nth-child(4){grid-column:span 7}
+    .g img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.02)}
+
+    /* ===== Testimonial ===== */
+    .testi{padding:64px 0}
+    .quote{max-width:860px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:32px;text-align:center}
+    .quote .who{margin-top:12px;color:var(--muted);font-weight:600;letter-spacing:.08em}
+
+    /* ===== Contact ===== */
+    .contact{padding:72px 0}
+    .form{max-width:760px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{display:block;font-weight:600;color:#2b3a3a;margin:.25rem 0}
+    input,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;outline:none}
+    textarea{min-height:140px;resize:vertical}
+    .form .actions{display:flex;gap:12px;align-items:center;margin-top:10px}
+    .status{min-height:1.4em}
+
+    /* ===== Footer ===== */
+    footer{margin-top:72px;background:#101616;color:#e9efef;border-top:1px solid #0f3030}
+    .foot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:40px 0}
+    footer a{color:#d6e7e7;text-decoration:none;opacity:.9}
+    footer a:hover{opacity:1}
+    .copy{border-top:1px solid #153535;padding:14px 0;color:#93a7a7;font-size:14px;text-align:center}
+
+    /* ===== Responsive ===== */
+    @media (max-width:1020px){.hero .wrap{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}.band .inner{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}}
+    @media (max-width:680px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.nav a.link{margin-left:14px}}
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header" role="banner">
-    <div class="header-content">
-      <div class="logo-section">
-        <img src="assets/logo.png" alt="Lakeshore Custom Interiors logo" class="logo" />
-        <div class="company-info">
-          <h1>LAKESHORE CUSTOM INTERIORS</h1>
-          <p>Artisan Craftsmanship Since 2024</p>
+  <div class="top">
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo.png" alt="Lakeshore Custom Interiors logo"/>
+        <div class="name">LAKESHORE CUSTOM INTERIORS</div>
+      </div>
+      <div>
+        <a class="link" href="#offerings">Offerings</a>
+        <a class="link" href="#resources">Resources</a>
+        <a class="link" href="#gallery">Gallery</a>
+        <a class="link" href="#contact">Contact</a>
+        <a class="btn" href="tel:19204952271">Call 920‑495‑2271</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container wrap">
+      <div>
+        <div class="eyebrow">Door County • White‑Glove Fabrication</div>
+        <h1>Premium Durasein® Countertops & Integrated Acrylic Sinks</h1>
+        <p style="color:var(--muted);max-width:46ch">Timeless surfaces, museum‑grade seams, and concierge coordination for out‑of‑town and second‑home owners. Designed, fabricated, and installed by artisans in Algoma.</p>
+        <div class="call">
+          <a class="btn" href="#contact">Request Consultation</a>
+          <a class="btn outline" href="#resources">Care & Warranty</a>
+        </div>
+        <div class="list">
+          <div class="tag"><i></i> Seamless sinks</div>
+          <div class="tag"><i></i> Heat & stain resistant</div>
+          <div class="tag"><i></i> Lifetime refinishing</div>
+          <div class="tag"><i></i> Licensed & insured</div>
         </div>
       </div>
-      <address class="contact-info">
-        <div class="phone"><a href="tel:19204952271">920‑495‑2271</a>
-          <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a></div>
-        <div class="address">111 County Road S, Algoma, WI 54201</div>
-        <div class="email"><a href="mailto:lakeshorecustominteriorsllc24@gmail.com" style="text-decoration:none;color:inherit">lakeshorecustominteriorsllc24@gmail.com</a></div>
-      </address>
+      <div class="card">
+        <h3 style="margin-bottom:.25rem">Showroom‑Quality Craftsmanship</h3>
+        <p style="color:var(--muted)">Precision templates, CNC fabrication, hand‑finished detailing, and protective install protocols tailored to second‑home schedules.</p>
+        <div style="display:flex;gap:18px;margin-top:16px">
+          <div style="flex:1">
+            <div style="font-weight:700;color:var(--teal-2);font-size:22px">Algoma • WI</div>
+            <div style="color:var(--muted)">111 County Road S<br>Algoma, WI 54201</div>
+          </div>
+          <div style="flex:1">
+            <div style="font-weight:700;color:var(--teal-2);font-size:22px">Contact</div>
+            <a href="tel:19204952271" style="display:block">920‑495‑2271</a>
+            <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <h2>Elevate Your Door County Home</h2>
-    <p>Premium Durasein® solid surface countertops and acrylic sinks, expertly crafted for discerning homeowners and luxury vacation properties throughout the Door Peninsula.</p>
-    <a class="cta-button" href="#contact">SCHEDULE YOUR CONSULTATION</a>
+  <section class="container" id="offerings" style="padding:56px 0 28px">
+    <div class="grid">
+      <div class="card">
+        <h3>Durasein® Countertops</h3>
+        <p style="color:var(--muted)">100% acrylic, non‑porous and hygienic. Invisible seams and repairable beauty for decades.</p>
+        <ul>
+          <li>Seamless integration • no visible joints</li>
+          <li>Heat & stain resistant with proper care</li>
+          <li>Custom colors and edge profiles</li>
+          <li>Perfect for kitchens, baths, wet bars</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Integrated Acrylic Sinks</h3>
+        <p style="color:var(--muted)">Molded from the same premium material as your countertop for a flawless, modern monolith.</p>
+        <ul>
+          <li>Undermount & integral options</li>
+          <li>All Durasein® colors</li>
+          <li>Durable, non‑porous, easy to sanitize</li>
+          <li>Refinishable for a like‑new sheen</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Specialty Surfaces</h3>
+        <p style="color:var(--muted)">Turn‑key surfaces beyond the kitchen, tuned for Door County living.</p>
+        <ul>
+          <li>Butcher block • authentic hardwood</li>
+          <li>High‑pressure laminate • budget smart</li>
+          <li>Custom vanities • outdoor kitchens</li>
+          <li>Commercial applications & consultations</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <!-- Main content omitted for brevity (keeps existing sections) -->
+  <div class="band">
+    <div class="container inner">
+      <div class="metric"><b>Concierge Scheduling</b><span>Planned around your visit windows</span></div>
+      <div class="metric"><b>Dust & Surface Protection</b><span>Installation protocols for second homes</span></div>
+      <div class="metric"><b>10‑Year Warranty</b><span>On all Durasein® products</span></div>
+      <div class="metric"><b>Local Heritage</b><span>Family‑owned • Algoma, WI</span></div>
+    </div>
+  </div>
 
-  <!-- Contact Form Section -->
-  <section class="section" id="contact">
+  <section class="resources container" id="resources">
+    <h2 style="text-align:center;margin-bottom:18px">Guides & Resources</h2>
+    <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 28px">Save these to your property binder or share with caretakers while you’re out of town.</p>
+    <div class="resource-grid">
+      <div class="res-card">
+        <h3>Care & Maintenance</h3>
+        <p style="color:var(--muted)">Everyday care, stain removal, heat guidelines, and sink sanitizing best practices.</p>
+        <div class="res-actions">
+          <a class="btn" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_Embedded.pdf">📥 PDF (Embedded)</a>
+          <a class="btn outline" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_ASCII.pdf">📥 PDF (ASCII)</a>
+        </div>
+      </div>
+      <div class="res-card">
+        <h3>Manufacturer Information</h3>
+        <p style="color:var(--muted)">Technical specifications, color library, and compliance documents direct from Durasein®.</p>
+        <a class="btn" href="https://durasein.com" target="_blank" rel="noopener">🏭 Durasein® Website</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
     <div class="container">
-      <h2 class="section-title">REQUEST A CONSULTATION</h2>
-      <p style="text-align:center;max-width:800px;margin:0 auto 2rem;font-size:1.1rem;">Ready to transform your space? Fill out the form and we'll reach out to schedule your design consultation.</p>
-      <form id="contact-form" class="form reveal" data-endpoint="" novalidate>
-        <input type="text" name="_gotcha" class="visually-hidden" autocomplete="off" tabindex="-1" aria-hidden="true">
+      <h2 style="text-align:center;margin-bottom:22px">Recent Work</h2>
+      <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 28px">A few representative projects. We gladly coordinate access with caretakers or property managers while you’re away.</p>
+      <div class="gallery-grid">
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop" alt="Seamless solid surface island"/></figure>
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1613541444691-0f39a1d7fcb1?q=80&w=1600&auto=format&fit=crop" alt="Integrated acrylic sink"/></figure>
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" alt="Refinished countertops"/></figure>
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1520722356645-94254f3f1ad5?q=80&w=1600&auto=format&fit=crop" alt="Butcher block accent"/></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="testi">
+    <div class="container">
+      <div class="quote">
+        <p style="font-size:20px">“We live in Chicago and use our Ephraim home on long weekends. Lakeshore templated, fabricated, and installed **perfectly** between visits—no dust, no drama, just a flawless Durasein® finish.”</p>
+        <div class="who">— Peninsula Homeowner</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 style="text-align:center;margin-bottom:6px">Request a Consultation</h2>
+      <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 24px">Send us a few details and we’ll coordinate a site visit or remote estimate around your schedule.</p>
+
+      <form id="contact-form" class="form" action="https://formsubmit.co/lakeshorecustominteriorsllc24@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New website inquiry – Lakeshore"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_captcha" value="true"/>
+        <input type="hidden" name="_next" value="/thank-you.html"/>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" autocomplete="off"/>
+
         <div class="row">
           <div>
             <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
+            <input id="name" name="name" required autocomplete="name"/>
           </div>
           <div>
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email" required>
+            <input id="email" name="email" type="email" required autocomplete="email"/>
           </div>
         </div>
         <div class="row">
           <div>
             <label for="phone">Phone (optional)</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="920-495-2271">
-            <small>We'll only use this to coordinate scheduling.</small>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="920-495-2271"/>
           </div>
           <div>
             <label for="subject">Project Type</label>
-            <input id="subject" name="subject" type="text" placeholder="Kitchen countertop, vanity, sink, refinishing…">
+            <input id="subject" name="subject" placeholder="Kitchen countertop, vanity, sink, refinishing…"/>
           </div>
         </div>
         <div>
           <label for="message">Project Details</label>
-          <textarea id="message" name="message" required placeholder="Tell us about your space, timeline, and any inspiration."></textarea>
+          <textarea id="message" name="message" required placeholder="Tell us about your space, timing, and any inspiration."></textarea>
         </div>
-        <div class="actions">
+        <div class="form .actions" style="display:flex;gap:12px;align-items:center;margin-top:10px;padding:0">
           <label><input type="checkbox" id="consent" required> I agree to be contacted about my inquiry.</label>
         </div>
-        <div class="actions">
-          <button type="submit" class="cta-button" style="border:none;cursor:pointer;">SEND REQUEST</button>
-          <span id="form-status" class="status" aria-live="polite"></span>
-        </div>
-        <input type="hidden" name="_subject" value="New website inquiry – Lakeshore">
-        <input type="hidden" name="_replyto" id="replyto-hidden">
+        <div class="actions"><button class="btn" type="submit">Send Request</button> <span id="form-status" class="status" aria-live="polite"></span></div>
       </form>
-      <p style="text-align:center;margin-top:1rem;color:#666">Prefer email? <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a></p>
+
+      <p style="text-align:center;margin-top:10px;color:var(--muted)">Or email us directly: <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a></p>
     </div>
   </section>
 
-  <!-- Downloads / Resources (for homeowners & second‑home clients) -->
-  <section class="section" id="resources">
-    <div class="container">
-      <h2 class="section-title">GUIDES & RESOURCES</h2>
-      <div class="download-section">
-        <p style="max-width:820px;margin:0 auto 1.6rem;opacity:.95">Save these care & maintenance guides for your property binder or to share with your caretaker while you’re out of town.</p>
-        <div class="download-buttons">
-          <a class="download-btn" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_Embedded.pdf">📥 Care & Maintenance Guide (PDF – Embedded)</a>
-          <a class="download-btn" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_ASCII.pdf">📥 Care & Maintenance Guide (PDF – ASCII)</a>
-          <a class="download-btn" href="https://durasein.com" target="_blank" rel="noopener">🏭 Durasein® Manufacturer Info</a>
-        </div>
+  <footer>
+    <div class="container foot">
+      <div>
+        <h4 style="margin:0 0 .4rem">Contact</h4>
+        <p>111 County Road S<br>Algoma, WI 54201</p>
+        <a href="tel:19204952271">920‑495‑2271</a><br>
+        <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a>
       </div>
-      <div class="warranty-badge">✦ 10‑YEAR LIMITED WARRANTY ON ALL DURASEIN® PRODUCTS ✦</div>
-      <p style="text-align:center;max-width:860px;margin:0 auto;color:#555">We specialize in turn‑key projects for **out‑of‑town and second‑home owners**—concierge scheduling, protected surfaces during remodels, and precise communication so installation fits your Door County visits.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <!-- Keep existing footer columns -->
+      <div>
+        <h4 style="margin:0 0 .4rem">Services</h4>
+        <a href="#offerings">Durasein® Countertops</a>
+        <a href="#offerings">Integrated Acrylic Sinks</a>
+        <a href="#offerings">Butcher Block</a>
+        <a href="#offerings">Laminate Surfaces</a>
+        <a href="#resources">Refinishing & Repair</a>
       </div>
-      <div class="footer-bottom">
-        <p>© 2025 Lakeshore Custom Interiors, LLC. All Rights Reserved. | Authorized Durasein® Fabricator</p>
+      <div>
+        <h4 style="margin:0 0 .4rem">Service Area</h4>
+        <p>Door County & Northeast Wisconsin — Sturgeon Bay • Sister Bay • Fish Creek • Ephraim • Baileys Harbor • Egg Harbor • Washington Island</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 .4rem">Office Hours</h4>
+        <p>Mon–Fri: 8am–5pm<br>Saturday: By Appointment</p>
       </div>
     </div>
+    <div class="copy">© 2025 Lakeshore Custom Interiors, LLC • Authorized Durasein® Fabricator</div>
   </footer>
 
-  <!-- Structured data -->
   <script>
-  // ====== Smooth scroll for internal links ======
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', (e) => {
-      const id = a.getAttribute('href');
-      if (id && id.length > 1) {
-        const target = document.querySelector(id);
-        if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id && id.length > 1) {
+          const t = document.querySelector(id);
+          if (t) { e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
         }
-      }
+      });
     });
-  });
+  </script>
 
-  // ====== Reveal on scroll ======
-  const revealables = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
-  revealables.forEach(el => io.observe(el));
-
-  // ====== Contact Form (Formspree-ready with fallback) ======
-  (function(){
-    const form = document.getElementById('contact-form');
-    if(!form) return;
-    const status = document.getElementById('form-status');
-    const emailTo = 'lakeshorecustominteriorsllc24@gmail.com';
-    const encode = (s)=>encodeURIComponent(s);
-
-    // Optional: add your Formspree endpoint id here (e.g., https://formspree.io/f/xyzabcd)
-    const FORM_ENDPOINT = form.dataset.endpoint && form.dataset.endpoint.trim().length
-      ? form.dataset.endpoint.trim()
-      : null;
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      status.textContent = '';
-
-      if(!form.checkValidity()){
-        form.reportValidity();
-        return;
-      }
-
-      const replyHidden = document.getElementById('replyto-hidden');
-      const emailInput = document.getElementById('email');
-      if(replyHidden && emailInput) replyHidden.value = emailInput.value;
-
-      const data = Object.fromEntries(new FormData(form).entries());
-      if(data._gotcha){ return; }
-
-      try{
-        if(FORM_ENDPOINT){
-          const resp = await fetch(FORM_ENDPOINT, { method:'POST', headers:{'Accept':'application/json'}, body: new FormData(form) });
-          if(resp.ok){
-            form.reset();
-            status.className = 'status success';
-            status.textContent = 'Thanks! Your message has been sent.';
-          } else {
-            throw new Error('Form service error');
-          }
-        } else {
-          const fsURL = `https://formsubmit.co/ajax/${encode(emailTo)}`;
-          const resp = await fetch(fsURL, { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(data) });
-          if(resp.ok){
-            form.reset();
-            status.className = 'status success';
-            status.textContent = 'Thanks! Your message has been sent.';
-          } else {
-            window.location.href = `mailto:${emailTo}?subject=${encode('New website inquiry – Lakeshore')}`;
-          }
-        }
-      } catch(err){
-        status.className = 'status error';
-        status.textContent = 'Hmm, something went wrong. Please email us directly.';
-      }
-    });
-  })();
-</script>
-
-<script type="application/ld+json">
+  <!-- Structured Data -->
+  <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Lakeshore Custom Interiors, LLC",
-    "telephone": "+1-920-495-2271",
-    "email": "mailto:lakeshorecustominteriorsllc24@gmail.com",
-    "address": {"@type": "PostalAddress","streetAddress": "111 County Road S","addressLocality": "Algoma","addressRegion": "WI","postalCode": "54201","addressCountry": "US"},
-    "areaServed": "Door County, Wisconsin",
-    "description": "Premium Durasein® solid surface countertops, integrated acrylic sinks, and specialty surfaces. Design, fabrication, installation, and refinishing."
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Lakeshore Custom Interiors, LLC",
+    "telephone":"+1-920-495-2271",
+    "email":"mailto:lakeshorecustominteriorsllc24@gmail.com",
+    "address":{"@type":"PostalAddress","streetAddress":"111 County Road S","addressLocality":"Algoma","addressRegion":"WI","postalCode":"54201","addressCountry":"US"},
+    "areaServed":"Door County, Wisconsin",
+    "url":"",
+    "description":"Premium Durasein® solid surface countertops, integrated acrylic sinks, and specialty surfaces. Concierge service for second‑home owners.",
+    "logo":"logo.png"
   }
   </script>
 </body>
