@@ -6,6 +6,12 @@
   <title>Lakeshore Custom Interiors — Durasein® Countertops & Acrylic Sinks | Door County, WI</title>
   <meta name="description" content="Door County’s white‑glove fabricator for Durasein® solid surface countertops and integrated acrylic sinks. Concierge service for second‑home owners."/>
   <meta name="theme-color" content="#0c3c3b"/>
+  <link rel="icon" type="image/png" href="img/favicon.png"/>
+  <link rel="apple-touch-icon" href="img/mark.png"/>
+  <meta property="og:title" content="Lakeshore Custom Interiors: Durasein® Countertops & Acrylic Sinks"/>
+  <meta property="og:description" content="Durasein® solid surface countertops and integrated acrylic sinks, fabricated in Algoma for Door County homes."/>
+  <meta property="og:image" content="https://willardwonder.github.io/lci/img/logo-full.jpg"/>
+  <meta property="og:url" content="https://willardwonder.github.io/lci/"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
@@ -80,10 +86,7 @@
     .gallery{padding:64px 0;background:linear-gradient(180deg,#fbfaf7,#f5f2eb)}
     .gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}
     .g{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;background:#e8e5df}
-    .g:nth-child(1){grid-column:span 7}
-    .g:nth-child(2){grid-column:span 5}
-    .g:nth-child(3){grid-column:span 5}
-    .g:nth-child(4){grid-column:span 7}
+    .g{grid-column:span 6;margin:0}
     .g img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.02)}
 
     /* ===== Testimonial ===== */
@@ -96,36 +99,43 @@
     .form{max-width:760px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:28px}
     .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
     label{display:block;font-weight:600;color:#2b3a3a;margin:.25rem 0}
+    input,textarea,button{font:inherit}
     input,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:#fff;outline:none}
     textarea{min-height:140px;resize:vertical}
     .form .actions{display:flex;gap:12px;align-items:center;margin-top:10px}
     .status{min-height:1.4em}
+    a[href^="mailto"]{overflow-wrap:anywhere}
 
     /* ===== Footer ===== */
     footer{margin-top:72px;background:#101616;color:#e9efef;border-top:1px solid #0f3030}
     .foot{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:40px 0}
     footer a{color:#d6e7e7;text-decoration:none;opacity:.9}
+    footer h4{color:#fff;font:600 13px Inter,system-ui;letter-spacing:.14em;text-transform:uppercase}
+    footer p{color:#c9d6d6}
+    .foot > div > a{display:block;margin:.25rem 0}
+    .consent{margin-top:10px}.consent label{display:flex;gap:10px;align-items:center;font-weight:500}.consent input{width:auto}
     footer a:hover{opacity:1}
     .copy{border-top:1px solid #153535;padding:14px 0;color:#93a7a7;font-size:14px;text-align:center}
 
     /* ===== Responsive ===== */
     @media (max-width:1020px){.hero .wrap{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.resource-grid{grid-template-columns:1fr}.band .inner{grid-template-columns:1fr 1fr}.foot{grid-template-columns:1fr 1fr}}
-    @media (max-width:680px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.nav a.link{margin-left:14px}}
+    @media (max-width:860px){.navlinks .link{display:none}.brand .name{font-size:12px;letter-spacing:1.2px}}
+    @media (max-width:680px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.g{grid-column:span 12}.hero{padding:48px 0 40px}.hero .list{grid-template-columns:1fr}.band .inner{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.hero .card > div{flex-direction:column}.brand img{width:44px;height:44px}.navlinks .btn{padding:.7rem 1.1rem;font-size:15px}.navlinks .num{display:none}}
   </style>
 </head>
 <body>
   <div class="top">
     <div class="container nav">
       <div class="brand">
-        <img src="weblogo.png" alt="Lakeshore Custom Interiors logo"/>
+        <img src="img/mark.png" alt="Lakeshore Custom Interiors logo" width="52" height="52"/>
         <div class="name">LAKESHORE CUSTOM INTERIORS</div>
       </div>
-      <div>
+      <div class="navlinks">
         <a class="link" href="#offerings">Offerings</a>
         <a class="link" href="#resources">Resources</a>
         <a class="link" href="#gallery">Gallery</a>
         <a class="link" href="#contact">Contact</a>
-        <a class="btn" href="tel:19204952271">Call 920‑495‑2271</a>
+        <a class="btn" href="tel:19204952271">Call<span class="num"> 920‑495‑2271</span></a>
       </div>
     </div>
   </div>
@@ -217,8 +227,8 @@
         <h3>Care & Maintenance</h3>
         <p style="color:var(--muted)">Everyday care, stain removal, heat guidelines, and sink sanitizing best practices.</p>
         <div class="res-actions">
-          <a class="btn" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_Embedded.pdf">📥 PDF (Embedded)</a>
-          <a class="btn outline" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_ASCII.pdf">📥 PDF (ASCII)</a>
+          <a class="btn" href="docs/Lakeshore_Durasein_Complete_Care_Guide.pdf" target="_blank" rel="noopener">📥 Complete care guide (PDF)</a>
+          <a class="btn outline" href="docs/Lakeshore_Durasein_Care_Maintenance_Guide_Embedded.pdf" target="_blank" rel="noopener">📥 Quick care sheet (PDF)</a>
         </div>
       </div>
       <div class="res-card">
@@ -231,13 +241,11 @@
 
   <section class="gallery" id="gallery">
     <div class="container">
-      <h2 style="text-align:center;margin-bottom:22px">Recent Work</h2>
-      <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 28px">A few representative projects. We gladly coordinate access with caretakers or property managers while you’re away.</p>
+      <h2 style="text-align:center;margin-bottom:22px">Inspiration</h2>
+      <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 28px">Representative photos of the looks we build. Ask us for photos from our own recent projects. We gladly coordinate access with caretakers or property managers while you’re away.</p>
       <div class="gallery-grid">
-        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop" alt="Seamless solid surface island"/></figure>
-        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1613541444691-0f39a1d7fcb1?q=80&w=1600&auto=format&fit=crop" alt="Integrated acrylic sink"/></figure>
-        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" alt="Refinished countertops"/></figure>
-        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1520722356645-94254f3f1ad5?q=80&w=1600&auto=format&fit=crop" alt="Butcher block accent"/></figure>
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1600&auto=format&fit=crop" alt="Bright kitchen with a solid surface island"/></figure>
+        <figure class="g"><img loading="lazy" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" alt="Interior with clean, seamless surfaces"/></figure>
       </div>
     </div>
   </section>
@@ -245,7 +253,7 @@
   <section class="testi">
     <div class="container">
       <div class="quote">
-        <p style="font-size:20px">“We live in Chicago and use our Ephraim home on long weekends. Lakeshore templated, fabricated, and installed **perfectly** between visits—no dust, no drama, just a flawless Durasein® finish.”</p>
+        <p style="font-size:20px">“We live in Chicago and use our Ephraim home on long weekends. Lakeshore templated, fabricated, and installed <strong>perfectly</strong> between visits—no dust, no drama, just a flawless Durasein® finish.”</p>
         <div class="who">— Peninsula Homeowner</div>
       </div>
     </div>
@@ -256,11 +264,11 @@
       <h2 style="text-align:center;margin-bottom:6px">Request a Consultation</h2>
       <p style="text-align:center;color:var(--muted);max-width:70ch;margin:0 auto 24px">Send us a few details and we’ll coordinate a site visit or remote estimate around your schedule.</p>
 
-      <form id="contact-form" class="form" action="https://formsubmit.co/lakeshorecustominteriorsllc24@gmail.com" method="POST" novalidate>
+      <form id="contact-form" class="form" action="https://formsubmit.co/lakeshorecustominteriorsllc24@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New website inquiry – Lakeshore"/>
         <input type="hidden" name="_template" value="table"/>
         <input type="hidden" name="_captcha" value="true"/>
-        <input type="hidden" name="_next" value="/thank-you.html"/>
+        <input type="hidden" name="_next" value="https://willardwonder.github.io/lci/thank-you.html"/>
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" aria-hidden="true" autocomplete="off"/>
 
         <div class="row">
@@ -287,7 +295,7 @@
           <label for="message">Project Details</label>
           <textarea id="message" name="message" required placeholder="Tell us about your space, timing, and any inspiration."></textarea>
         </div>
-        <div class="form .actions" style="display:flex;gap:12px;align-items:center;margin-top:10px;padding:0">
+        <div class="consent">
           <label><input type="checkbox" id="consent" required> I agree to be contacted about my inquiry.</label>
         </div>
         <div class="actions"><button class="btn" type="submit">Send Request</button> <span id="form-status" class="status" aria-live="polite"></span></div>
@@ -302,7 +310,7 @@
       <div>
         <h4 style="margin:0 0 .4rem">Contact</h4>
         <p>111 County Road S<br>Algoma, WI 54201</p>
-        <a href="tel:19204952271">920‑495‑2271</a><br>
+        <a href="tel:19204952271">920‑495‑2271</a>
         <a href="mailto:lakeshorecustominteriorsllc24@gmail.com">lakeshorecustominteriorsllc24@gmail.com</a>
       </div>
       <div>
@@ -348,9 +356,9 @@
     "email":"mailto:lakeshorecustominteriorsllc24@gmail.com",
     "address":{"@type":"PostalAddress","streetAddress":"111 County Road S","addressLocality":"Algoma","addressRegion":"WI","postalCode":"54201","addressCountry":"US"},
     "areaServed":"Door County, Wisconsin",
-    "url":"",
+    "url":"https://willardwonder.github.io/lci/",
     "description":"Premium Durasein® solid surface countertops, integrated acrylic sinks, and specialty surfaces. Concierge service for second‑home owners.",
-    "logo":"logo.png"
+    "logo":"https://willardwonder.github.io/lci/img/logo-full.jpg"
   }
   </script>
 </body>
